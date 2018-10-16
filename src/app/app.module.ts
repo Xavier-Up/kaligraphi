@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
 import { KaligraphiModule } from '@kalidea/kaligraphi';
+
+import { AppComponent } from 'src/app/app.component';
+import { InputComponent } from 'src/app/atoms/input/input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,

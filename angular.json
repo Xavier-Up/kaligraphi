@@ -14,6 +14,12 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/kaligraphi",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src",
+                "./dist/kalidea/kaligraphi/styles"
+              ]
+            },
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -126,7 +132,6 @@
       "root": "projects/kalidea/kaligraphi",
       "sourceRoot": "projects/kalidea/kaligraphi/src",
       "projectType": "library",
-      "prefix": "kal",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -161,7 +166,12 @@
   "defaultProject": "kaligraphi",
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "sass"
+      "viewEncapsulation": "None",
+      "styleext": "sass",
+      "changeDetection": "OnPush"
+    },
+    "@schematics/angular:module": {
+      "export": true
     }
   }
 }

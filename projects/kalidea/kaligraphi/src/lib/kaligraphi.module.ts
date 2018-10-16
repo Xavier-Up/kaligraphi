@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InputModule } from './01-atoms/input/input.module';
+import { KalInputModule } from './atoms/index';
 
 const exports = [
-  InputModule
+  KalInputModule
 ];
 
 @NgModule({
@@ -11,6 +11,7 @@ const exports = [
     CommonModule,
     ...exports
   ],
-  exports: exports
+  exports: exports,
+  declarations: []
 })
 export class KaligraphiModule { }
