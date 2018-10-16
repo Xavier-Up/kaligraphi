@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { KgInputComponent } from './input.component';
+import { KalInputComponent } from './kal-input.component';
 
-const exports = [KgInputComponent];
+const exports = [KalInputComponent];
 
 @NgModule({
   imports: [
@@ -13,4 +13,4 @@ const exports = [KgInputComponent];
   exports: exports,
   declarations: exports
 })
-export class InputModule { }
+export class KalInputModule { }
