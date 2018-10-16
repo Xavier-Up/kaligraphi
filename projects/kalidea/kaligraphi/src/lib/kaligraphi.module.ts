@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { KalInputModule } from './atoms/index';
+import { KalCheckboxComponent } from './atoms/kal-checkbox/kal-checkbox.component';
 
 const exports = [
   KalInputModule
@@ -12,6 +13,6 @@ const exports = [
     ...exports
   ],
   exports: exports,
-  declarations: []
+  declarations: [KalCheckboxComponent]
 })
 export class KaligraphiModule { }
