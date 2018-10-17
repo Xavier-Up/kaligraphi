@@ -2,15 +2,15 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { KalCheckboxComponent } from './kal-checkbox.component';
 
-describe('KalCheckboxComponent', () => {
+fdescribe('KalCheckboxComponent', () => {
   let component: KalCheckboxComponent;
   let fixture: ComponentFixture<KalCheckboxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ KalCheckboxComponent ]
+      declarations: [KalCheckboxComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +21,9 @@ describe('KalCheckboxComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should add and remove disabled state', () => {
+
   });
 });

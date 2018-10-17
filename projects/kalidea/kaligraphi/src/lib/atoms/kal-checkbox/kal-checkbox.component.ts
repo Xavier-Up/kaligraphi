@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'kal-checkbox',
@@ -9,7 +9,8 @@ import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@
 })
 export class KalCheckboxComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

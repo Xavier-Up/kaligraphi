@@ -1,3 +1,11 @@
-<p>
-  kal-checkbox works!
-</p>
+<input type="checkbox"
+       [id]="id"
+       [required]="required"
+       [checked]="checked"
+       [attr.value]="value"
+       [disabled]="disabled"
+       [attr.name]="name"
+       [tabIndex]="tabIndex"
+       (change)="_onInteractionEvent($event)"
+       (click)="_onInputClick($event)">
+<label [for]="id"></label>
